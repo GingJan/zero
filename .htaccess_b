@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ public/ [L] #把素有请求重定向到public目录下
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
